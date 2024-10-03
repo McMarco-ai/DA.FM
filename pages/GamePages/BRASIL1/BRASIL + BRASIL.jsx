@@ -32,7 +32,7 @@ const BRASILBRASILEN = () => {
 
            
                 <Image
-                    source={require('../../assets/brbrEN.png')} // Replace with your image URL
+                    source={require('../../assets/brbrEN.png')} 
                     style={styles.image}
                 />
             

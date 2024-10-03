@@ -4380,8 +4380,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-
-    height: 80,
+paddingTop: 30,
+    height: 110,
     paddingLeft: 22,
   },
   icon: {

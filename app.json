@@ -1,15 +1,7 @@
 {
   "expo": {
-    "plugins": [
-      [
-        "expo-font",
-        {
-          "fonts": ["../pages/assets/Inter-Regular"]
-        }
-      ]
-    ],
     "name": "DA.FM",
-    "slug": "DA.FM",
+    "slug": "DAFM",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -20,16 +12,23 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "DAFM"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.marco_dev364.DAFM"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "4288e7d1-b4c6-40d2-b5a4-0304379207d8"
+      }
     }
   }
 }

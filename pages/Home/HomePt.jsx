@@ -170,7 +170,6 @@ const styles = StyleSheet.create({
     },
     boldText: {
         fontSize: 24,
-        fontFamily: 'Inter-Regular',
         fontWeight: 'bold',
         textAlign: 'left'
     },

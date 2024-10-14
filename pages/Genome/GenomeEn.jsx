@@ -1,5 +1,5 @@
 import React from 'react';
-import { Pressable, StyleSheet, Text, View, ScrollView, Image, ImageBackground, Linking } from 'react-native';
+import { Pressable, StyleSheet, Text, View, ScrollView, Image, ImageBackground, Linking , Platform} from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
 const GenomeEn = () => {
@@ -16,9 +16,23 @@ const GenomeEn = () => {
     const handleLinkPress = () => {
         Linking.openURL('https://ancestrytraveller.i3s.up.pt/the-ancestry-traveller-genetics-and-identity-drawing-group-the-difficulty-of-building-individual-stories-based-on-scientific-data-and-other-observations/');
     };
-
+    const spacerHeight = 55554450;
     return (
         <ScrollView contentContainerStyle={styles.container}>
+            {Platform.OS === 'ios' && (
+                <View
+                    style={{
+                        backgroundColor: '#263238',
+                        height: spacerHeight,
+                        position: 'absolute',
+                        top: -spacerHeight,
+                        bottom: spacerHeight,
+
+                        left: 0,
+                        right: 0,
+                    }}
+                />
+            )}
             <View style={styles.backgroundContainer}>
                 <ImageBackground
                     style={styles.backimage}

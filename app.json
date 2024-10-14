@@ -13,7 +13,8 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "DAFM"
+      "bundleIdentifier": "com.example.DAFM"
+      
     },
     "android": {
       "adaptiveIcon": {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Pressable, StyleSheet, Text, View, ScrollView, Image } from 'react-native';
+import { Pressable, StyleSheet, Text, View, ScrollView, Image , Platform } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
 
@@ -21,9 +21,23 @@ const HomePt = () => {
     const handlePressDA = () => {
         navigation.navigate('DAFMEn');
     };
-
+    const spacerHeight = 55554450;
     return (
         <ScrollView contentContainerStyle={styles.container}>
+            {Platform.OS === 'ios' && (
+                <View
+                    style={{
+                        backgroundColor: '#263238',
+                        height: spacerHeight,
+                        position: 'absolute',
+                        top: -spacerHeight,
+                        bottom: spacerHeight,
+
+                        left: 0,
+                        right: 0,
+                    }}
+                />
+            )}
             <View style={styles.title}>
                 <Text style={styles.titleTextBig}>
                     AUDIBLE DIVERSITY{'\n'}
@@ -38,10 +52,10 @@ const HomePt = () => {
                 <Pressable onPress={handlePress} style={[styles.button, styles.buttonGreen]}>
                     <Text style={styles.boldText}>The human genome</Text>
                 </Pressable>
-                <Pressable onPress={handlePressDiversity}  style={[styles.button, styles.buttonYellow]}>
+                <Pressable onPress={handlePressDiversity} style={[styles.button, styles.buttonYellow]}>
                     <Text style={styles.boldText}>Human diversity</Text>
                 </Pressable>
-                <Pressable  onPress={handlePressExpansion} style={[styles.button, styles.buttonBlue]}>
+                <Pressable onPress={handlePressExpansion} style={[styles.button, styles.buttonBlue]}>
                     <Text style={styles.boldText}>Human expansion</Text>
                 </Pressable>
                 <Pressable onPress={handlePressVoyages} style={[styles.button, styles.buttonRed]}>
@@ -97,7 +111,7 @@ const HomePt = () => {
             </View>
             <View style={styles.textContainerSmall}>
                 <Text style={styles.smallText}>
-                This application is part of a set of Educational Resources. Try out the board game we prepared on the evolution of human populations.          </Text>
+                    This application is part of a set of Educational Resources. Try out the board game we prepared on the evolution of human populations.          </Text>
             </View>
             <View style={styles.textContainerSmall}>
                 <Text style={styles.titleText}>
@@ -134,12 +148,12 @@ const HomePt = () => {
 const styles = StyleSheet.create({
     container: {
         flexGrow: 1,
-        
+        color: '#263238',
         backgroundColor: '#263238',
     },
     title: {
         marginTop: 50,
-       
+
     },
     titleText: {
         fontSize: 45,

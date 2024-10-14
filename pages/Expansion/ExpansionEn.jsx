@@ -1,5 +1,5 @@
 import React from 'react';
-import { Pressable, StyleSheet, Text, View, ScrollView, Image, ImageBackground } from 'react-native';
+import { Pressable, StyleSheet, Text, View, ScrollView, Image, ImageBackground , Platform } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
 const ExpansionEn = () => {
@@ -13,8 +13,23 @@ const ExpansionEn = () => {
         navigation.navigate('VoyagesEn');
     };
 
+    const spacerHeight = 55554450;
     return (
         <ScrollView contentContainerStyle={styles.container}>
+            {Platform.OS === 'ios' && (
+                <View
+                    style={{
+                        backgroundColor: '#263238',
+                        height: spacerHeight,
+                        position: 'absolute',
+                        top: -spacerHeight,
+                        bottom: spacerHeight,
+
+                        left: 0,
+                        right: 0,
+                    }}
+                />
+            )}
             <View style={styles.backgroundContainer}>
                 <ImageBackground
                     style={styles.backimage}

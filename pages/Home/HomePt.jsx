@@ -1,5 +1,5 @@
 import React from 'react';
-import { Pressable, StyleSheet, Text, View, ScrollView, Image } from 'react-native';
+import { Pressable, StyleSheet, Text, View, ScrollView, Image, Platform } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
 
@@ -23,8 +23,23 @@ const HomePt = () => {
     };
 
 
+    const spacerHeight = 55554450;
     return (
         <ScrollView contentContainerStyle={styles.container}>
+            {Platform.OS === 'ios' && (
+                <View
+                    style={{
+                        backgroundColor: '#263238',
+                        height: spacerHeight,
+                        position: 'absolute',
+                        top: -spacerHeight,
+                        bottom: spacerHeight,
+
+                        left: 0,
+                        right: 0,
+                    }}
+                />
+            )}
             <View style={styles.title}>
                 <Text style={styles.titleTextBig}>
                     DIVERSIDADE AUDÍVEL{'\n'}
@@ -41,13 +56,13 @@ const HomePt = () => {
                 <Pressable onPress={handlePressDiversity} style={[styles.button, styles.buttonYellow]}>
                     <Text style={styles.boldText}>Diversidade humana</Text>
                 </Pressable>
-                <Pressable  onPress={handlePressExpansion} style={[styles.button, styles.buttonBlue]}>
+                <Pressable onPress={handlePressExpansion} style={[styles.button, styles.buttonBlue]}>
                     <Text style={styles.boldText}>A expansão humana</Text>
                 </Pressable>
                 <Pressable onPress={handlePressVoyages} style={[styles.button, styles.buttonRed]}>
                     <Text style={styles.boldText}>Primeira viagem global</Text>
                 </Pressable>
-                <Pressable onPress={handlePressDA}  style={[styles.button, styles.buttonLilac]}>
+                <Pressable onPress={handlePressDA} style={[styles.button, styles.buttonLilac]}>
                     <Text style={styles.boldText}>DA.FM</Text>
                 </Pressable>
             </View>
@@ -63,7 +78,7 @@ const HomePt = () => {
             </View>
             <View style={styles.textContainerSmall}>
                 <Text style={styles.smallText}>
-                Inspirado na viagem de circum-navegação de Fernão Magalhães, há 500 anos, o projeto Ancestry Traveller dedicou-se à diversidade humana, interligando genética, história e cultura.  </Text>
+                    Inspirado na viagem de circum-navegação de Fernão Magalhães, há 500 anos, o projeto Ancestry Traveller dedicou-se à diversidade humana, interligando genética, história e cultura.  </Text>
             </View>
             <View style={styles.textContainerSmall}>
                 <Text style={styles.titleText}>
@@ -72,7 +87,7 @@ const HomePt = () => {
             </View>
             <View style={styles.textContainerSmall}>
                 <Text style={styles.smallText}>
-                Esta primeira viagem global foi o ponto de partida para explorar a ancestralidade, um conceito extremamente complexo, diverso e muitas vezes envolto em controvérsia. Dele resultaram várias atividades públicas e recursos didáticos.      </Text>
+                    Esta primeira viagem global foi o ponto de partida para explorar a ancestralidade, um conceito extremamente complexo, diverso e muitas vezes envolto em controvérsia. Dele resultaram várias atividades públicas e recursos didáticos.      </Text>
             </View>
             <View style={styles.textContainerSmall}>
                 <Text style={styles.titleText}>
@@ -81,7 +96,7 @@ const HomePt = () => {
             </View>
             <View style={styles.textContainerSmall}>
                 <Text style={styles.smallText}>
-                Um dos resultados desta jornada foi uma instalação/exposição de Ciência e Arte, explorando vários conceitos de genética humana e como eles se ligam. Esta aplicação, “Diversidade Audível”, fez parte da exposição. </Text>
+                    Um dos resultados desta jornada foi uma instalação/exposição de Ciência e Arte, explorando vários conceitos de genética humana e como eles se ligam. Esta aplicação, “Diversidade Audível”, fez parte da exposição. </Text>
             </View>
             < View style={styles.imageView}>
                 <Image
@@ -100,12 +115,12 @@ const HomePt = () => {
             </View>
             <View style={styles.textContainerSmall}>
                 <Text style={styles.titleText}>
-                    4. Parceiros do Projeto 
+                    4. Parceiros do Projeto
                 </Text>
             </View>
             <View style={styles.textContainerSmall}>
                 <Text style={styles.smallText}>
-                Fundação para a Ciência e a Tecnologia (FCT)Instituto de Patologia e Imunologia Molecular (IPATIMUP/UP)Instituto de Biologia Molecular e Celular (IBMC/UP)Instituto de Ciências Sociais da Universidade de Lisboa (ICS/ULisboa)  </Text>
+                    Fundação para a Ciência e a Tecnologia (FCT)Instituto de Patologia e Imunologia Molecular (IPATIMUP/UP)Instituto de Biologia Molecular e Celular (IBMC/UP)Instituto de Ciências Sociais da Universidade de Lisboa (ICS/ULisboa)  </Text>
             </View>
             < View style={styles.imageView}>
                 <Image
@@ -130,12 +145,12 @@ const HomePt = () => {
 const styles = StyleSheet.create({
     container: {
         flexGrow: 1,
-       
+
         backgroundColor: '#263238',
     },
     title: {
         marginTop: 50,
-        
+
     },
     titleText: {
         fontSize: 45,

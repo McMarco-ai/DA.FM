@@ -44,7 +44,7 @@ const PORTUGAL1BRASIL1EN = () => {
                     useNativeControls={false}
                     shouldPlay={true}
                     isMuted={false}
-                    volume={1.0}
+                    volume={3.0}
                 />
             ) : (
                 <Image
@@ -76,7 +76,6 @@ const styles = StyleSheet.create({
     container: {
         flexGrow: 1,
         justifyContent: 'center',
-        alignItems: 'left',
         backgroundColor: '#263238',
     },
     title: {

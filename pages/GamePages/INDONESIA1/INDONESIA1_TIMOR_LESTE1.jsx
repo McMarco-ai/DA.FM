@@ -41,6 +41,8 @@ const INDONESIA1TIMORLESTE1EN = () => {
                             handleVideoEnd();
                         }
                     }}
+                    ignoreSilentSwitch={'ignore'}
+
                     useNativeControls={false}
                     shouldPlay={true}
                     isMuted={false}
@@ -76,7 +78,6 @@ const styles = StyleSheet.create({
     container: {
         flexGrow: 1,
         justifyContent: 'center',
-        alignItems: 'left',
         backgroundColor: '#263238',
     },
     title: {

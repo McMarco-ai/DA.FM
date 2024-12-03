@@ -204,7 +204,9 @@ const styles = StyleSheet.create({
         paddingBottom: 30,
     },
     parasmallText: {
-        fontSize: 20,
+fontSize: 18,
+
+
         color: '#FFFFFF',
         fontWeight: 'semibold',
         paddingRight: 120,
@@ -279,7 +281,8 @@ const styles = StyleSheet.create({
 
     },
     normalTextButton: {
-        fontSize: 18,
+fontSize: 18,
+
         color: '#FFFFFF',
     },
 });

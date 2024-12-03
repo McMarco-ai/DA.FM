@@ -23,7 +23,7 @@ const INDONESIAPORTUGALEN = () => {
     };
 
     return (
-        <View style={styles.container}>
+        <ScrollView contentContainerStyle={styles.container}>
             <View style={styles.title}>
                 <Text style={styles.titleTextBig}>
                 THE ORIGIN
@@ -48,7 +48,7 @@ const INDONESIAPORTUGALEN = () => {
                 </Pressable>
               
             </View>
-        </View>
+        </ScrollView>
         
     );
 };
@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
     container: {
         flexGrow: 1,
         justifyContent: 'center',
-       
+
         backgroundColor: '#263238',
     },
     title: {
@@ -122,9 +122,11 @@ const styles = StyleSheet.create({
         backgroundColor: '#263238',
     },
     buttonText: {
-        fontSize: 20,
+fontSize: 18,
+
         color: '#FFFFFF',
         fontWeight: 'bold',
+        justifyContent: 'center'
     },
 });
 

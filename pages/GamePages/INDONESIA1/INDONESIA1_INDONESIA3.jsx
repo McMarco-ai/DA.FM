@@ -23,7 +23,7 @@ const INDONESIA1INDONESIA3EN = () => {
     };
 
     return (
-        <View style={styles.container}>
+        <ScrollView contentContainerStyle={styles.container}>
             <View style={styles.title}>
                 <Text style={styles.titleTextBig}>
                 LISTEN CAREFULLY
@@ -67,7 +67,7 @@ const INDONESIA1INDONESIA3EN = () => {
                     <Text style={styles.buttonText}>NO</Text>
                 </Pressable>
             </View>
-        </View>
+        </ScrollView>
         
     );
 };
@@ -106,7 +106,7 @@ const styles = StyleSheet.create({
         color: '#FFFFFF',
         textAlign: 'left',
         fontWeight: 'bold',
-        marginRight: 30
+        marginRight: 20
     },
     video: {
         width: '100%',
@@ -140,7 +140,9 @@ const styles = StyleSheet.create({
         backgroundColor: '#263238',
     },
     buttonText: {
-        fontSize: 20,
+fontSize: 18,
+
+
         color: '#FFFFFF',
         fontWeight: 'bold',
     },

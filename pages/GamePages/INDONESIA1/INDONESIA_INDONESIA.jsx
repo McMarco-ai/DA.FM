@@ -26,30 +26,30 @@ const INDONESIAINDONESIAEN = () => {
         <ScrollView contentContainerStyle={styles.container}>
             <View style={styles.title}>
                 <Text style={styles.titleTextBig}>
-                THE ORIGIN
+                    THE ORIGIN
                 </Text>
             </View>
 
-           
-                <Image
-                    source={require('../../assets/ininEN.png')} // Replace with your image URL
-                    style={styles.image}
-                />
-            
+
+            <Image
+                source={require('../../assets/ininEN.png')} // Replace with your image URL
+                style={styles.image}
+            />
+
 
             <View style={styles.titleDown}>
                 <Text style={styles.titleText}>
-                THE SOUND REPRESENTS ONLY 1 million variants, That is, a part of the 0.1% of the genome.                </Text>
+                    THE SOUND REPRESENTS ONLY 1 million variants, That is, a part of the 0.1% of the genome.                </Text>
             </View>
 
             <View style={styles.buttonsContainer}>
                 <Pressable onPress={handlePressForward} style={[styles.button, styles.buttonLeft]}>
                     <Text style={styles.buttonText}>COMPARE ANOTHER PAIR</Text>
                 </Pressable>
-              
+
             </View>
         </ScrollView>
-        
+
     );
 };
 
@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
     container: {
         flexGrow: 1,
         justifyContent: 'center',
-       
+
         backgroundColor: '#263238',
     },
     title: {
@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
         paddingBottom: 100,
         paddingTop: 10,
     },
-    titleDown:{
+    titleDown: {
         marginLeft: 16,
         marginTop: 40,
         paddingRight: 10,
@@ -121,9 +121,11 @@ const styles = StyleSheet.create({
         backgroundColor: '#263238',
     },
     buttonText: {
-        fontSize: 20,
+        fontSize: 18,
+
         color: '#FFFFFF',
         fontWeight: 'bold',
+        justifyContent: 'center'
     },
 });
 

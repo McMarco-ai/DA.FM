@@ -1,5 +1,5 @@
 import React from 'react';
-import { Pressable, StyleSheet, Text, View, ScrollView, Image, ImageBackground , Platform} from 'react-native';
+import { Pressable, StyleSheet, Text, View, ScrollView, Image, ImageBackground , Platform , Linking} from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
 const VoyagesEn = () => {
@@ -110,7 +110,7 @@ const styles = StyleSheet.create({
     backgroundContainer: {
         position: 'relative',
         width: '100%',
-        height: 420, // Adjust this value to control the height of the background image
+        height: 510,
     },
     backimage: {
         position: 'absolute',
@@ -278,7 +278,8 @@ const styles = StyleSheet.create({
 
     },
     normalTextButton: {
-        fontSize: 18,
+fontSize: 18,
+
         color: '#FFFFFF',
     },
     mapView: {

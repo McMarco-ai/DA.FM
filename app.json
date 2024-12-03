@@ -2,26 +2,30 @@
   "expo": {
     "name": "DA.FM",
     "slug": "DAFM",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#ffffff",
+      "newArchEnabled": true
+
     },
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.example.DAFM"
-      
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.marco_dev364.DAFM"
+      "package": "com.marco_dev364.DAFM",
+      "blockedPermissions": ["android.permission.FOREGROUND_SERVICE", "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"] ,
+      "versionCode": 2
+
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -30,6 +34,9 @@
       "eas": {
         "projectId": "4288e7d1-b4c6-40d2-b5a4-0304379207d8"
       }
-    }
+    },
+    "plugins": [
+      "expo-font"
+    ]
   }
 }

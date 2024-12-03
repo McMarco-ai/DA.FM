@@ -100,7 +100,8 @@ const styles = StyleSheet.create({
   },
   language: {
     color: '#ffffff',
-    fontSize: 18,
+    fontSize: 18
+
   },
 });
 

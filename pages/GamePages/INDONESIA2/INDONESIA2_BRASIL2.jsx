@@ -106,7 +106,7 @@ const styles = StyleSheet.create({
         color: '#FFFFFF',
         textAlign: 'left',
         fontWeight: 'bold',
-        marginRight: 30
+        marginRight: 20
     },
     video: {
         width: '100%',
@@ -140,8 +140,8 @@ const styles = StyleSheet.create({
         backgroundColor: '#263238',
     },
     buttonText: {
-        fontSize: 20,
-        color: '#FFFFFF',
+fontSize: 18,
+       color: '#FFFFFF',
         fontWeight: 'bold',
     },
 });

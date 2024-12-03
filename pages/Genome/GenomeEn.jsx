@@ -158,7 +158,8 @@ const styles = StyleSheet.create({
         textAlign: 'left',
     },
     normalTextButton:{
-        fontSize: 18,
+fontSize: 18,
+
         color: '#FFFFFF',
     },
     boldText: {
@@ -196,7 +197,9 @@ const styles = StyleSheet.create({
         paddingRight: 30,
     },
     parasmallText: {
-        fontSize: 20,
+fontSize: 18,
+
+
         color: '#FFFFFF',
         fontWeight: 'semibold',
         paddingRight: 140,

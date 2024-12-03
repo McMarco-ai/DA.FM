@@ -4374,7 +4374,8 @@ const styles = StyleSheet.create({
   },
   language: {
     color: '#ffffff',
-    fontSize: 18,
+    fontSize: 18
+
   },
   headerBackground: {
     backgroundColor: '#263238',
